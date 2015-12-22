@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/core.scss'
 
 // Note: Stateless/function components *will not* hot reload!
 // react-transform *only* works on component classes.
@@ -12,10 +11,8 @@ import '../styles/core.scss'
 // define it with a plain javascript function...
 function CoreLayout ({ children }) {
   return (
-    <div className='page-container'>
-      <div className='view-container'>
-        {children}
-      </div>
+    <div className='container stackable'>
+      {children}
     </div>
   )
 }

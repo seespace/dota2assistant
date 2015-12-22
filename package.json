@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-starter-kit",
-  "version": "1.0.0",
-  "description": "Get started with React, Redux, and React-Router!",
+  "name": "dota2assistant",
+  "version": "0.1.0",
+  "description": "Dota 2 Draft Assistant",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
+    "url": "git+https://github.com/seespace/dota2assistant.git"
   },
-  "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
+  "author": "SeeSpace Team",
   "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
@@ -30,6 +30,7 @@
     "react-dom": "^0.14.0",
     "react-redux": "^4.0.0",
     "react-router": "1.0.1",
+    "react-semantify": "^0.4.1",
     "redux": "^3.0.0",
     "redux-actions": "^0.9.0",
     "redux-simple-router": "^1.0.0",
