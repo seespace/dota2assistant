@@ -1,41 +1,42 @@
-import React from 'react'
-import TestUtils from 'react-addons-test-utils'
-import { bindActionCreators } from 'redux'
-import { HomeView } from 'views/HomeView'
+import React from 'react';
+import TestUtils from 'react-addons-test-utils';
+import { bindActionCreators } from 'redux';
+import { HomeView } from 'views/HomeView';
 
 function shallowRender (component) {
-  const renderer = TestUtils.createRenderer()
+  const renderer = TestUtils.createRenderer();
 
-  renderer.render(component)
-  return renderer.getRenderOutput()
+  renderer.render(component);
+  return renderer.getRenderOutput();
 }
 
 function renderWithProps (props = {}) {
-  return TestUtils.renderIntoDocument(<HomeView {...props} />)
+  return TestUtils.renderIntoDocument(<HomeView {...props} />);
 }
 
 function shallowRenderWithProps (props = {}) {
-  return shallowRender(<HomeView {...props} />)
+  return shallowRender(<HomeView {...props} />);
 }
 
 describe('(View) Home', function () {
-  let _component, _rendered, _props, _spies
+  let _component, _props, _spies;
 
   beforeEach(function () {
-    _spies = {}
+    _spies = {};
     _props = {
-      counter: 0,
+      setting: {
+        firstPick: false
+      },
       ...bindActionCreators({
-        doubleAsync: (_spies.doubleAsync = sinon.spy()),
-        increment: (_spies.increment = sinon.spy())
+        togglePick: (_spies.togglePick = sinon.spy())
       }, _spies.dispatch = sinon.spy())
-    }
+    };
 
-    _component = shallowRenderWithProps(_props)
-    _rendered = renderWithProps(_props)
-  })
+    _component = shallowRenderWithProps(_props);
+    renderWithProps(_props);
+  });
 
   it('Should render as a <div>.', function () {
-    expect(_component.type).to.equal('div')
-  })
-})
+    expect(_component.type).to.equal('div');
+  });
+});

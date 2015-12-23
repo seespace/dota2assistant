@@ -2,6 +2,7 @@ Dota 2 Draft Assistant
 ======================
 
 [![Build Status](https://travis-ci.org/seespace/dota2assistant.svg?branch=develop)](https://travis-ci.org/seespace/dota2assistant?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/seespace/dota2assistant/badge.svg?branch=develop&service=github)](https://coveralls.io/github/seespace/dota2assistant?branch=develop)
 [![dependencies](https://david-dm.org/seespace/dota2assistant.svg)](https://david-dm.org/seespace/dota2assistant)
 [![devDependency Status](https://david-dm.org/seespace/dota2assistant/dev-status.svg)](https://david-dm.org/seespace/dota2assistant#info=devDependencies)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)

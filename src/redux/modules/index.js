@@ -1,8 +1,10 @@
-import { combineReducers } from 'redux'
-import { routeReducer } from 'redux-simple-router'
-import counter from './counter'
+import { combineReducers } from 'redux';
+import { routeReducer } from 'redux-simple-router';
+import undoable from 'redux-undo';
+
+import setting from './setting';
 
 export default combineReducers({
-  counter,
+  setting: undoable(setting),
   router: routeReducer
-})
+});

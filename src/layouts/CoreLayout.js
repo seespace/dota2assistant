@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../styles/core.scss';
 
 // Note: Stateless/function components *will not* hot reload!
 // react-transform *only* works on component classes.
@@ -11,14 +12,14 @@ import React from 'react'
 // define it with a plain javascript function...
 function CoreLayout ({ children }) {
   return (
-    <div className='container stackable'>
+    <div className='container stackable corelayout'>
       {children}
     </div>
-  )
+  );
 }
 
 CoreLayout.propTypes = {
   children: React.PropTypes.element
-}
+};
 
-export default CoreLayout
+export default CoreLayout;
